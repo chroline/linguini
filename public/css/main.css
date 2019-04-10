@@ -1,0 +1,63 @@
+html, body, .container-fluid, .row {
+    height: 100%;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.title {
+    background: #2962FF;
+    color: white;
+}
+
+.title .inner {
+    display: inline-block;
+    padding: 20px;
+    background: white;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.5);
+    -webkit-box-shadow: 0px 0px 23px -6px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 23px -6px rgba(255,255,255,1);
+    box-shadow: 0px 0px 23px -6px rgba(255,255,255,1);
+}
+
+.title h1 {
+    font-family: Lobster;
+}
+
+.title h1 span:nth-child(even) {
+    color: rgb(238, 216, 16);
+    padding: 1px;
+}
+
+.title h1 span:nth-child(odd) {
+    color: rgb(238, 23, 16);
+    padding: 1px;
+}
+
+.title h2 {
+    font-family: VT323;
+    color: black;
+}
+
+.servos {
+    height: initial;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+}
+
+p {
+    font-family: VT323;
+    color: black;
+    font-size: 30px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  {{{head}}}
+</head>
+
+<body>
+  <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5 title">
+        <div class="inner">
+          <h1>Linguini</h1>
+          <h2>Mission Control</h2>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="row servos">
+          <section id="waist" class="servo col-lg-6">
+            <p>Waist</p>
+            <div class="input-slider-container">
+              <div id="waist-ctrl" class="input-slider" data-range-value-min="0" data-range-value-max="180"></div>
+              {{{servo}}}
+            </div>
+          </section>
+          <section id="shoulder" class="servo col-lg-6">
+            <p>Shoulder</p>
+            <div class="input-slider-container">
+              <div id="shoulder-ctrl" class="input-slider" data-range-value-min="0" data-range-value-max="160"></div>
+              {{{servo}}}
+            </div>
+          </section>
+          <section id="elbow" class="servo col-lg-6">
+            <p>Elbow</p>
+            <div class="input-slider-container">
+              <div id="elbow-ctrl" class="input-slider" data-range-value-min="0" data-range-value-max="180"></div>
+              {{{servo}}}
+            </div>
+          </section>
+          <section id="roll" class="servo col-lg-6">
+            <p>Wrist Roll</p>
+            <div class="input-slider-container">
+              <div id="roll-ctrl" class="input-slider" data-range-value-min="25" data-range-value-max="155"></div>
+              {{{servo}}}
+            </div>
+          </section>
+          <section id="pitch" class="servo col-lg-6">
+            <p>Wrist Pitch</p>
+            <div class="input-slider-container">
+              <div id="pitch-ctrl" class="input-slider" data-range-value-min="70" data-range-value-max="180"></div>
+              {{{servo}}}
+            </div>
+          </section>
+          <section id="grip" class="servo col-lg-6">
+            <p>Gripper</p>
+            <div class="input-slider-container">
+              <div id="gripper-ctrl" class="input-slider" data-range-value-min="120" data-range-value-max="155"></div>
+              {{{servo}}}
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{{scripts}}}
+</body>
+
+</html>
