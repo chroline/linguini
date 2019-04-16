@@ -1,3 +1,4 @@
+
 const five = require("johnny-five"),
   board = new five.Board(),
   express = require("express"),
@@ -17,26 +18,26 @@ board.on("ready", function () {
   console.log("ready")
   const servos = {
     waist: new five.Servo({
-      pin: 5,
+      pin: 7,
       startAt: 0,
       type: "continuous"
     }),
     shoulder: new five.Servo({
-      pin: 6,
+      pin: 8,
       startAt: 90,
       type: "continuous"
     }),
     elbow: new five.Servo({
-      pin: 7,
+      pin: 6,
       startAt: 180
     }),
     wrist: {
       pitch: new five.Servo({
-        pin: 8,
+        pin: 9,
         startAt: 70
       }),
       roll: new five.Servo({
-        pin: 9,
+        pin: 10,
         startAt: 25
       }),
       grip: new five.Servo({
