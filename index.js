@@ -32,10 +32,6 @@ board.on("ready", function () {
       startAt: 180
     }),
     wrist: {
-      pitch: new five.Servo({
-        pin: 9,
-        startAt: 70
-      }),
       roll: new five.Servo({
         pin: 10,
         startAt: 25
@@ -47,8 +43,6 @@ board.on("ready", function () {
     }
   };
   ctrl = servos;
-
-  server.listen(PORT);
 });
 
 
@@ -102,10 +96,6 @@ io.on('connection', function (socket) {
         console.log(data.val[0]);
         ctrl.wrist.grip.to(parseFloat(data.val[0]));
         break;
-      case "pitch":
-        console.log(data.val[0]);
-        ctrl.wrist.pitch.to(parseFloat(data.val[0]));
-        break;
       case "roll":
         console.log(data.val[0]);
         ctrl.wrist.roll.to(parseFloat(data.val[0]));
@@ -130,3 +120,5 @@ io.on('connection', function (socket) {
     }
   })
 });
+
+server.listen(PORT);
